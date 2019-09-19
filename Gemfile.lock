@@ -1,0 +1,19 @@
+GIT
+  remote: git@github.com:lucasnathaniel/osu-hitsounder.git
+  revision: 08672481de5326febeb8b6538eda6b91db5780b1
+  specs:
+    osu-hitsounder (0.0.1)
+
+GEM
+  specs:
+    byebug (11.0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  byebug
+  osu-hitsounder!
+
+BUNDLED WITH
+   2.0.2
