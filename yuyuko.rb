@@ -9,9 +9,13 @@ require "byebug"
 Version = 'Yuyuko Osu Manager Version: 0.1'
 
 parsed_params = Essential::header
+if parsed_params.empty?
+	system("ruby #{$0} -h")
+	exit 1
+end
+
 if File.file?(parsed_params[:hitsound_copier]) and File.file?(parsed_params[:hitsound_paster])
 	OsuHitsounder::Manage.copy_hitsound(parsed_params.slice(:hitsound_copier, :hitsound_paster))
 else
 	p "Invalid files"
 end
-	
